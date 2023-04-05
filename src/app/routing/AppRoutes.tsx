@@ -16,10 +16,12 @@ import {App} from '../App'
  *
  * @see https://facebook.github.io/create-react-app/docs/using-the-public-folder
  */
-export const AppRoutes: FC = () => {
+const { PUBLIC_URL } = process.env
+
+const AppRoutes: FC = () => {
   const {currentUser} = useAuth()
   return (
-    <BrowserRouter basename={'/metronic8/react/demo1'}>
+    <BrowserRouter basename={PUBLIC_URL}>
       <Routes>
         <Route element={<App />}>
           <Route path='error/*' element={<ErrorsPage />} />
@@ -41,4 +43,4 @@ export const AppRoutes: FC = () => {
   )
 }
 
-// export {AppRoutes}
+export {AppRoutes}
