@@ -17,7 +17,7 @@ http://localhost:3011/metronic8/react/demo1/media/logos/default-small.svg
  *
  * @see https://facebook.github.io/create-react-app/docs/using-the-public-folder
  */
-const {PUBLIC_URL} = process.env
+const PUBLIC_URL = process.env.PUBLIC_URL
 
 const AppRoutes: FC = () => {
   const {currentUser} = useAuth()
