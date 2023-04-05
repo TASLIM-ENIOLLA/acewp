@@ -91,6 +91,6 @@
     ]
   },
   "eslintIgnore": [
-    "dist/*",
+    "dist/*"
   ]
 }
