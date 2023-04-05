@@ -17,12 +17,10 @@ http://localhost:3011/metronic8/react/demo1/media/logos/default-small.svg
  *
  * @see https://facebook.github.io/create-react-app/docs/using-the-public-folder
  */
-const __PUBLIC_URL = '/metronic8/react/demo1';
-
 const AppRoutes: FC = () => {
   const {currentUser} = useAuth()
   return (
-    <BrowserRouter basename={__PUBLIC_URL}>
+    <BrowserRouter basename={'/metronic8/react/demo1'}>
       <Routes>
         <Route element={<App />}>
           <Route path='error/*' element={<ErrorsPage />} />
