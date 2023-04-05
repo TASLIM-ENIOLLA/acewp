@@ -11,7 +11,6 @@ import {PrivateRoutes} from './PrivateRoutes'
 import {ErrorsPage} from '../modules/errors/ErrorsPage'
 import {Logout, AuthPage, useAuth} from '../modules/auth'
 import {App} from '../App'
-http://localhost:3011/metronic8/react/demo1/media/logos/default-small.svg
 /**
  * Base URL of the website.
  *
